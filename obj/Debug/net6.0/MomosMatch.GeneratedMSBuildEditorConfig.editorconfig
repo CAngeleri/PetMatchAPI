@@ -8,81 +8,81 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = MomosMatch
 build_property.RootNamespace = MomosMatch
-build_property.ProjectDir = C:\Users\caman\OneDrive\Documents\GitHub\PetMatchAPI\
+build_property.ProjectDir = c:\Users\caman\OneDrive\Documents\GitHub\PetMatchAPI\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\caman\OneDrive\Documents\GitHub\PetMatchAPI
+build_property.MSBuildProjectDirectory = c:\Users\caman\OneDrive\Documents\GitHub\PetMatchAPI
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/caman/OneDrive/Documents/GitHub/PetMatchAPI/Views/Pet/Dashboard.cshtml]
+[c:/Users/caman/OneDrive/Documents/GitHub/PetMatchAPI/Views/Pet/Dashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGV0XERhc2hib2FyZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/caman/OneDrive/Documents/GitHub/PetMatchAPI/Views/Pet/Gallery.cshtml]
+[c:/Users/caman/OneDrive/Documents/GitHub/PetMatchAPI/Views/Pet/Gallery.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGV0XEdhbGxlcnkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/caman/OneDrive/Documents/GitHub/PetMatchAPI/Views/Pet/PetDetailsPage.cshtml]
+[c:/Users/caman/OneDrive/Documents/GitHub/PetMatchAPI/Views/Pet/PetDetailsPage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGV0XFBldERldGFpbHNQYWdlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/caman/OneDrive/Documents/GitHub/PetMatchAPI/Views/Post/Create.cshtml]
+[c:/Users/caman/OneDrive/Documents/GitHub/PetMatchAPI/Views/Post/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdFxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/caman/OneDrive/Documents/GitHub/PetMatchAPI/Views/Post/Delete.cshtml]
+[c:/Users/caman/OneDrive/Documents/GitHub/PetMatchAPI/Views/Post/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdFxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/caman/OneDrive/Documents/GitHub/PetMatchAPI/Views/Post/Details.cshtml]
+[c:/Users/caman/OneDrive/Documents/GitHub/PetMatchAPI/Views/Post/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdFxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/caman/OneDrive/Documents/GitHub/PetMatchAPI/Views/Post/Edit.cshtml]
+[c:/Users/caman/OneDrive/Documents/GitHub/PetMatchAPI/Views/Post/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdFxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/caman/OneDrive/Documents/GitHub/PetMatchAPI/Views/Post/index.cshtml]
+[c:/Users/caman/OneDrive/Documents/GitHub/PetMatchAPI/Views/Post/index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdFxpbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/caman/OneDrive/Documents/GitHub/PetMatchAPI/Views/Shared/Error.cshtml]
+[c:/Users/caman/OneDrive/Documents/GitHub/PetMatchAPI/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/caman/OneDrive/Documents/GitHub/PetMatchAPI/Views/Shared/_ValidationScriptsPartial.cshtml]
+[c:/Users/caman/OneDrive/Documents/GitHub/PetMatchAPI/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/caman/OneDrive/Documents/GitHub/PetMatchAPI/Views/User/Index.cshtml]
+[c:/Users/caman/OneDrive/Documents/GitHub/PetMatchAPI/Views/User/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/caman/OneDrive/Documents/GitHub/PetMatchAPI/Views/User/LikesPage.cshtml]
+[c:/Users/caman/OneDrive/Documents/GitHub/PetMatchAPI/Views/User/LikesPage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxMaWtlc1BhZ2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/caman/OneDrive/Documents/GitHub/PetMatchAPI/Views/User/UserDetailsPage.cshtml]
+[c:/Users/caman/OneDrive/Documents/GitHub/PetMatchAPI/Views/User/UserDetailsPage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxVc2VyRGV0YWlsc1BhZ2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/caman/OneDrive/Documents/GitHub/PetMatchAPI/Views/User/_UserForm.cshtml]
+[c:/Users/caman/OneDrive/Documents/GitHub/PetMatchAPI/Views/User/_UserForm.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxfVXNlckZvcm0uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/caman/OneDrive/Documents/GitHub/PetMatchAPI/Views/User/_UserLoginForm.cshtml]
+[c:/Users/caman/OneDrive/Documents/GitHub/PetMatchAPI/Views/User/_UserLoginForm.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxfVXNlckxvZ2luRm9ybS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/caman/OneDrive/Documents/GitHub/PetMatchAPI/Views/_ViewImports.cshtml]
+[c:/Users/caman/OneDrive/Documents/GitHub/PetMatchAPI/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/caman/OneDrive/Documents/GitHub/PetMatchAPI/Views/_ViewStart.cshtml]
+[c:/Users/caman/OneDrive/Documents/GitHub/PetMatchAPI/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/caman/OneDrive/Documents/GitHub/PetMatchAPI/Views/Shared/_Layout.cshtml]
+[c:/Users/caman/OneDrive/Documents/GitHub/PetMatchAPI/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-piwtkrodly
