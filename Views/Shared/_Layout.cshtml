@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - MomosMatch</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="BG">
+
+    <div class="BG">
+        <div class="row header ">
+            <div class="col header-item p-3">
+                <a asp-controller="Pet" asp-action="Dashboard">
+                    <img src="@Url.Content("~/assets/maneki-neko_4477173.png")" alt="Lucky-Cat-Icon" />
+                </a>
+            </div>
+
+            @if(Context.Session.GetInt32("UserId") > 0 ) {
+                <div class="col d-flex align-items-center justify-content-end p-3 m-3">
+                    <form asp-action="Logout" asp-controller="User" method="post">
+                        <button type="submit" class="btn btn-outline-secondary btn-block">Logout</button>
+                    </form>
+                </div>
+            }
+        </div>
+    </div>
+        <main role="main" class="pb-3 mainBody">
+            @RenderBody()
+        </main>
+
+
+        @if(Context.Session.GetInt32("UserId") > 0 ) {
+        <div class="footerBG">
+    <div class="footer d-flex justify-content-around mt-4">
+        <div class="footer-item">
+            <a asp-controller="Pet" asp-action="Dashboard">
+                <img src="@Url.Content("~/assets/home_3010900.png")" alt="Lukcy Cat!" />
+                <p>Home</p>
+            </a>
+        </div>
+
+        <div class="footer-item">
+            <a asp-controller="User" asp-action="AccountDetails" asp-route-id="@Context.Session.GetInt32("UserId")">
+                <img src="@Url.Content("~/assets/id-card_5692213.png")" alt="User Details" />
+                <p>User Details</p>
+            </a>
+        </div>
+
+
+        <div class="footer-item">
+            <a asp-controller="Post" asp-action="Index">
+                <img src="@Url.Content("~/assets/pet_10157155.png")"  alt="Pets You're Feeling" />
+                <p>Share with Friends</p>
+            </a>
+        </div>
+
+        <div class="footer-item">
+            <a asp-controller="Pet" asp-action="GalleryPage">
+                <img src="@Url.Content("~/assets/global_3010947.png")" alt="Browse Pets" />
+                <p>Browse Pets</p>
+            </a>
+        </div>
+
+        </div>
+        </div>
+        }
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+
+</body>
+</html>

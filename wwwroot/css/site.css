@@ -1,0 +1,162 @@
+html {
+  font-size: 14px;
+}
+
+img{
+  border-radius: 5px;
+}
+
+*{
+  font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal; 
+  text-decoration: none;
+}
+
+.BG{
+  background: #D2BBF2;
+}
+.mainBody{
+  background: #EDE9F2 ;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+.userForm{
+  margin: auto;
+  max-width: 500px;
+}
+
+.logbtn{
+  background-color: #ae8fd9;
+  color: #FFFFFF;
+  width: inherit;
+
+}
+
+/*------ Dashbaord ------------*/
+
+.carousel-inner{
+  width: 500px;
+  height: 700px;
+}
+
+.cardImg{
+  max-width: 500px;
+  max-height: 400px;
+  width: auto;
+  }
+
+.hicon{
+  height: 25px;
+}
+
+.carousel-control-custom-icon {
+  width: 35px;
+  height: auto;
+}
+
+
+@media (max-width: 800px) {
+  .carousel-inner{
+    width: 300px;
+    height: 500px;
+  }
+
+  .cardImg {
+    max-width: 300px;
+    max-height: 275px;
+  }
+}
+
+
+
+/*------ Gallery Page ---------*/
+
+.galleryBody{
+  height: 1000px;
+  overflow-y: scroll;
+}
+@media (max-width: 800px) {
+  .galleryBody {
+    height: 700px;
+    overflow-y: scroll;
+  }
+}
+
+
+
+/*-------User Details Page ---------*/
+
+.petImgSm{
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+}
+
+.LikedPetContainer{
+overflow: wrap;
+background-color: #DeD0f2;
+}
+
+/*--------Pet Page ----------*/
+.likePawContainer{
+  height: 20px;
+}
+
+/*------ Footer ---------*/
+
+.footer {
+  display: flex;
+  justify-content: space-around; 
+  align-items: center; 
+  text-decoration: none;
+  background-color: #D2BBF2;
+  color:#0F0F0F;
+  padding: 15px 0;
+  background: #D2BBF2;
+}
+
+.footer-item {
+  text-align: center;
+}
+
+.footer-item img {
+  width: 75px; 
+  height: 75px;
+}
+
+.footer-item p {
+  margin-top: 3px; 
+  color:#0F0F0F;
+}
+
+.header-item img {
+  width: auto; 
+  max-height: 100px;
+}
+
+.logoutBtn{
+  background: #8e6bbf;
+  color: #FFFFFF;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.logoutBtn:hover{
+  background: #DeD0f2;
+}
+
+.header{
+  background: #D2BBF2;
+}

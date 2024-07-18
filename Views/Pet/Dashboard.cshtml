@@ -1,0 +1,81 @@
+@model IEnumerable<MomosMatch.Models.Pet>
+
+
+
+
+    <p class="text-center p-4">it's giving new bestfriend...</p>
+<div class="d-flex justify-content-center mb-4">
+    <div id="petCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            @if (Model.Any())
+            {
+                bool isFirst = true;
+                foreach (var pet in Model)
+                {
+                    <div class="carousel-item @(isFirst ? "active" : "")" style="background-color: #FFFFFF;">
+                        <div class="dasboard-card">
+                            <img src="@Url.Content(pet.PhotoUrl)" class="card-img-top cardImg img-fluid p-3" alt="@pet.Name">
+                            <div class="card-body">
+                                <h5 class="display-5 text-center">@pet.Name</h5>
+                                <hr>
+                                <div class="row d-flex justify-content-between">
+                                    <div class="col col-8">
+                                        <p class="card-text">@pet.Breed</p>
+                                        <p class="card-text">@pet.Age year old, @pet.Gender</p>
+                                        <p class="card-text">Likes: @pet.LikeList.Count(l => l.PetId == pet.PetId)</p>
+                                    </div>
+                                
+                                <div class="col col-3 mr-3">
+                                    @{
+                                        int? userId = Context.Session.GetInt32("UserId");
+                                        var hasLiked = pet.LikeList.Any(l => l.UserId == userId);
+                                    }
+                                    @if (hasLiked)
+                                    {
+                                        <form method="post" action="@Url.Action("Like", "Pet", new { PetId = pet.PetId })">
+                                            <button type="submit" class="btn" class="likePaw"> 
+                                                <img src="/assets/elizabethan-collar_7129180.png" alt="" class="img-fluid" style="width: 75px;">
+                                                <p>maybe not...</p>
+                                            </button>  
+                                        </form>
+                                    }
+                                    else
+                                    {
+                                        <form method="post" action="@Url.Action("Like", "Pet", new { PetId = pet.PetId })">
+                                            <button type="submit" class="btn" class="likePaw"> 
+                                                <img src="/assets/hearts_2060959.png" alt="" class="img-fluid" style="width: 75px;">
+                                                <p>add like!</p>
+                                            </button>  
+                                        </form>
+                                    }
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    isFirst = false;
+                }
+            }
+            else
+            {
+                <div class="carousel-item active">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">No pets available</h5>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#petCarousel" data-bs-slide="prev">
+            <img src="/assets/heart_263054.png" alt="Previous" class="carousel-control-custom-icon" />
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#petCarousel" data-bs-slide="next">
+            <img src="/assets/heart_263054.png" alt="Next" class="carousel-control-custom-icon" />
+            <span class="visually-hidden">Next</span>
+        </button>
+
+    </div>
+

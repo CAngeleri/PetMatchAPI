@@ -1,0 +1,62 @@
+@{
+    ViewData["Title"] = "User Details";
+}
+
+<div class="container mt-5">
+    <h1 class="text-center p-4">about me</h1>
+    
+    <div class="row">
+            <div class="card">
+                <div class="card-body p-4">
+                    <h5 class="card-title">Personal Information</h5>
+                    <hr>
+                    <p><strong>Name:</strong> @Model.FirstName @Model.LastName</p>
+                    <p><strong>Email:</strong> @Model.Email</p>
+                    <p><strong>Total Likes:</strong> @Model.LikeCount</p>
+                </div>
+            </div>
+    </div>
+    
+    @if (Model.LikeCount > 0)
+    {
+        <h3 class="p-3">Liked Pets</h3>
+        <div class="mt-2 mb-4 LikedPetContainer p-3">
+
+            <div class="row">
+                @foreach (var likedPet in Model.LikedPets)
+                {
+                    <div class="col-md-3 col-sm-6 mb-4">
+                        <div class="card" style="width: 15rem;">
+                            <div class="imgContaner">
+                                <img src="@likedPet.PetImg" alt="" class="card-img-top p-2">
+                            </div>
+                            <div class="card-body">
+                                <div class="d-block text-center">
+                                    <strong>@likedPet.PetName</strong>
+                                </div>
+                            </div>
+                            <a class="text-center" href="/pet/@likedPet.PetId">@likedPet.PetName's details</a>
+                        </div>
+                    </div>
+                }
+            </div>
+
+        </div>
+    }
+    else
+    {
+        <div class="mt-2 mb-4 LikedPetContainer p-3 text-center">
+
+            <img src="~/assets/dog_2437791.png" alt="">
+            <p class="mt-4">You haven't liked any pets yet...</p>
+            <p>
+                <a href="/dashboard">we can change that</a>
+            </p>
+        </div>
+    }
+    
+</div>
+
+<!-- Optional: Include Bootstrap CSS -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+

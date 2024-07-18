@@ -1,0 +1,32 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="row">
+    <div class="col p-2" id="userFormContainer" style="display: none;">
+        @await Html.PartialAsync("_UserForm")
+    </div>
+    <div class="col p-2" id="userLoginFormContainer">
+        @await Html.PartialAsync("_UserLoginForm")
+    </div>
+        <button id="toggleButton" class="btn btn-block p-2 mt-2" style="background: #D2BBF2; color: #FFFFFF;" onclick="toggleForms()">Are you new here? Register</button>
+</div>
+
+
+<script>
+    function toggleForms() {
+        var userFormContainer = document.getElementById("userFormContainer");
+        var userLoginFormContainer = document.getElementById("userLoginFormContainer");
+        var toggleButton = document.getElementById("toggleButton");
+
+        if (userFormContainer.style.display === "none") {
+            userFormContainer.style.display = "block";
+            userLoginFormContainer.style.display = "none";
+            toggleButton.innerText = "Already have an account? Login";
+        } else {
+            userFormContainer.style.display = "none";
+            userLoginFormContainer.style.display = "block";
+            toggleButton.innerText = "Are you new here? Register";
+        }
+    }
+</script>

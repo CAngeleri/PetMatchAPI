@@ -1,0 +1,157 @@
+@model List<MomosMatch.Models.Pet>
+
+@{
+    ViewData["Title"] = "Pet Gallery";
+}
+
+<!-- Filters section -->
+<form method="get" action="@Url.Action("GalleryPage", "Pet")" class="filters-container">
+    <div class="row align-items-center p-1 mt-4">
+        <div class="col-3 d-flex justify-content-end ">
+            <p>Filter by type:</p>
+        </div>
+        <div class="col-8">
+            <div class="form-group">
+                <select name="type" class="form-control">
+                    <option value="all">All</option>
+                    <option value="cat">Cat</option>
+                    <option value="dog">Dog</option>
+                    <option value="rabbit">Rabbit</option>
+                    <option value="bird">Bird</option>
+                    <option value="horse">Horse</option>
+                    <option value="small">Small & Furry</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="row align-items-center p-1">
+        <div class="col-3 d-flex justify-content-end">
+            <p>Filter by size:</p>
+        </div>
+        <div class="col-8">
+            <div class="form-group">
+                <select name="size" class="form-control">
+                    <option value="all">All</option>
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="row align-items-center p-1">
+        <div class="col-3 d-flex justify-content-end">
+            <p>Filter by age:</p>
+        </div>
+        <div class="col-8">
+            <div class="form-group">
+                <select name="age" class="form-control">
+                    <option value="0">All</option>
+                    <option value="1">Under 1 year</option>
+                    <option value="2">1-2 years</option>
+                    <option value="3">2-3 years</option>
+                    <option value="4">3-4 years</option>
+                    <option value="5">4-5 years</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="row align-items-center p-1">
+        <div class="col-3 d-flex justify-content-end">
+            <p>Filter by gender:</p>
+        </div>
+        <div class="col-8">
+            <div class="form-group">
+                <select name="gender" class="form-control">
+                    <option value="all">All</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="row align-items-center p-1">
+        <div class="col-3 d-flex justify-content-end"></div>
+        <div class="col-8">
+            <button type="submit" class="btn btn-outline-secondary btn-block mt-2">Apply Filters</button>
+        </div>
+    </div>
+    <hr />
+</form>
+
+<div class="container galleryBody">
+    @if (Model.Count == 0)
+    {
+        <div class="text-center p-4">
+            <img src="~/assets/hot-air-balloon_4600705.png" alt="" class="p-3"/>
+            <h3 class="mt-3">No pets found matching the selected filters.</h3>
+            <p class="text-muted">Don't give up! Try again or reach out to an organization near you!</p>
+        </div>
+    }
+    else
+    {
+        @foreach (var pet in Model)
+        {
+            <div class="card mb-3 pet-card d-flex justify-content-start">
+                <div class="row p-4">
+                    <div class="text-end display-3">
+                        @{
+                            int? userId = Context.Session.GetInt32("UserId");
+                            var hasLiked = pet.LikeList.Any(l => l.UserId == userId);
+                        }
+                        @if (hasLiked)
+                        {
+                            <form method="post" action="@Url.Action("Like", "Pet", new { PetId = pet.PetId })">
+                                <button type="submit" class="btn" class="likePaw"> 
+                                    <img src="/assets/elizabethan-collar_7129180.png" alt="" class="img-fluid" style="width: 75px;">
+                                    <p>maybe not...</p>
+                                </button>                            
+                            </form>
+                        }
+                        else
+                        {
+                            <form method="post" action="@Url.Action("Like", "Pet", new { PetId = pet.PetId })">
+                                <button type="submit" class="btn" class="likePaw"> 
+                                    <img src="/assets/hearts_2060959.png" alt="" class="img-fluid" style="width: 75px;">
+                                    <p>add like!</p>
+                                </button>
+
+                            </form>
+                        }
+                    </div>
+                    <div class="col-md-4">
+                        <a asp-controller="Pet" asp-action="PetDetailsPage" asp-route-id="@pet.PetId">
+                            <img src="@Url.Content(pet.PhotoUrl)" class="img-fluid rounded-start" alt="@pet.Name">
+                        </a>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h1 class="display-4">@pet.Name</h1>
+                            <p class="display-6">@pet.LikeList.Count people have shown @pet.Name love!</p>
+                            <hr>
+                            <p><strong>Breed:</strong> @pet.Breed</p>
+                            <p><strong>Age:</strong> @pet.Age</p>
+                            <p><strong>Gender:</strong> @pet.Gender</p>
+                            <p><strong>Size:</strong> @pet.Size</p>
+                            <p><strong>Description:</strong> @pet.Description</p>
+                            <p><strong>Health:</strong> @pet.Health</p>
+                            <p><strong>Spayed/Neutered:</strong> @pet.SpayedNeutered</p>
+                            <p><strong>Vaccination Status:</strong> @pet.VaccinationStatus</p>
+                            <p><strong>Organization Name:</strong> @pet.OrganizationName</p>
+                            <p><strong>Organization Link:</strong> <a href="@pet.OrganizationLink">@pet.OrganizationLink</a></p>
+                            <p><strong>Posted:</strong> @pet.CreatedAt.ToString("MMMM dd, yyyy")</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    }
+</div>
+
+<!-- Include Bootstrap CSS and JavaScript -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
