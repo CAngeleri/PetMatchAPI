@@ -24,36 +24,36 @@
 ## Screenshots & Recordings
 
 - **Login** :
-![Screenshot 1](wwwroot\assets\PetAPIScreenshots\Login.png)
-![Screenshot 2](wwwroot\assets\PetAPIScreenshots\LoginMobile.png)
+![Screenshot 1](wwwroot/assets/PetAPIScreenshots/Login.png)
+![Screenshot 2](wwwroot/assets/PetAPIScreenshots/LoginMobile.png)
 - **Registration** :
-![Screenshot 3](wwwroot\assets\PetAPIScreenshots\Reg.png)
-![Screenshot 4](wwwroot\assets\PetAPIScreenshots\RegMobile.png)
+![Screenshot 3](wwwroot/assets/PetAPIScreenshots/Reg.png)
+![Screenshot 4](wwwroot/assets/PetAPIScreenshots/RegMobile.png)
 - **Landing Page** :
-![Screenshot 3](wwwroot\assets\PetAPIScreenshots\Landing.png)
-![Screenshot 4](wwwroot\assets\PetAPIScreenshots\LandingMobile.png)
+![Screenshot 3](wwwroot/assets/PetAPIScreenshots/Landing.png)
+![Screenshot 4](wwwroot/assets/PetAPIScreenshots/LandingMobile.png)
 - **Pet Details Page** :
-![Screenshot 5](wwwroot\assets\PetAPIScreenshots\PetDetailsHeader.png)
-![Screenshot 6](wwwroot\assets\PetAPIScreenshots\PetDetailsHeaderMobile.png)
-![Screenshot 7](wwwroot\assets\PetAPIScreenshots\PetDetailsFooter.png)
-![Screenshot 8](wwwroot\assets\PetAPIScreenshots\PetDetailsFooterMobile.png)
+![Screenshot 5](wwwroot/assets/PetAPIScreenshots/PetDetailsHeader.png)
+![Screenshot 6](wwwroot/assets/PetAPIScreenshots/PetDetailsHeaderMobile.png)
+![Screenshot 7](wwwroot/assets/PetAPIScreenshots/PetDetailsFooter.png)
+![Screenshot 8](wwwroot/assets/PetAPIScreenshots/PetDetailsFooterMobile.png)
 - **User Details / About Me Page** :
-![Screenshot 5](wwwroot\assets\PetAPIScreenshots\AboutMe.png)
-![Screenshot 6](wwwroot\assets\PetAPIScreenshots\AboutMeMobile.png)
+![Screenshot 5](wwwroot/assets/PetAPIScreenshots/AboutMe.png)
+![Screenshot 6](wwwroot/assets/PetAPIScreenshots/AboutMeMobile.png)
 - **The Wall / Blog Page** :
-![Screenshot 7](wwwroot\assets\PetAPIScreenshots\Wall.png)
-![Screenshot 8](wwwroot\assets\PetAPIScreenshots\WallMobile.png)
+![Screenshot 7](wwwroot/assets/PetAPIScreenshots/Wall.png)
+![Screenshot 8](wwwroot/assets/PetAPIScreenshots/WallMobile.png)
 - **New Comment** :
-![Screenshot 9](wwwroot\assets\PetAPIScreenshots\AddComment.png)
-![Screenshot 10](wwwroot\assets\PetAPIScreenshots\AddCommentMobile.png)
+![Screenshot 9](wwwroot/assets/PetAPIScreenshots/AddComment.png)
+![Screenshot 10](wwwroot/assets/PetAPIScreenshots/AddCommentMobile.png)
 - **New Post** :
-![Screenshot 11](wwwroot\assets\PetAPIScreenshots\NewPost.png)
-![Screenshot 12](wwwroot\assets\PetAPIScreenshots\NewPostMobile.png)
+![Screenshot 11](wwwroot/assets/PetAPIScreenshots/NewPost.png)
+![Screenshot 12](wwwroot/assets/PetAPIScreenshots/NewPostMobile.png)
 - **Post Details** :
-![Screenshot 13](wwwroot\assets\PetAPIScreenshots\PostDetails.png)
-![Screenshot 14](wwwroot\assets\PetAPIScreenshots\PostDetailsMobile.png)
-![Screenshot 15](wwwroot\assets\PetAPIScreenshots\CreatorPostDetails.png)
-![Screenshot 16](wwwroot\assets\PetAPIScreenshots\CreatorPostDetailsMobile.png)
+![Screenshot 13](wwwroot/assets/PetAPIScreenshots/PostDetails.png)
+![Screenshot 14](wwwroot/assets/PetAPIScreenshots/PostDetailsMobile.png)
+![Screenshot 15](wwwroot/assets/PetAPIScreenshots/CreatorPostDetails.png)
+![Screenshot 16](wwwroot/assets/PetAPIScreenshots/CreatorPostDetailsMobile.png)
 **Pet Gallery** : 
 ![Screenshot 17](wwwroot/assets/PetAPIScreenshots/GalleryHeader.png)
 ![Screenshot 18](wwwroot/assets/PetAPIScreenshots/GalleryHeaderMobile.png)
